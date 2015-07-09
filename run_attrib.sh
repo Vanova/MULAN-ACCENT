@@ -14,7 +14,7 @@ logdir=log
 fbank_config=conf/fbank.conf
 compute-fbank-feats --verbose=2 --config=$fbank_config scp:$scp ark,t:$ark
 
-# 2. run forward pass
+# 2. run Neural Network forward pass
 dir=exp/dnn4_pretrain-dbn_dnn_${rbm_hid_layers}_${rbm_hid_units}
 testdir=$dir/decode_test
 ali=../multi_manner/kaldiformat/ark
@@ -31,7 +31,9 @@ labels=$ali/multi_ali_test_post.ark
 nnet_best=$dir/final.nnet
 # end settings
 
+
+
+
 # test set to probabilities scores
-nnet-forward --use-gpu=yes \
- ${feature_transform:+ --feature-transform=$feature_transform} \
- $nnet_best scp:$test_scp ark,t:- > $testdir/res_MLP.txt
+nnet-forward ${feature_transform:+ --feature-transform=$feature_transform} \
+ $nnet_best scp:$test_scp ark,t:- > $testdir/res_scores.txt
