@@ -1,7 +1,9 @@
 #!/bin/bash
 
-ls -1 data/wav > data/waves.list
-local/create_wav_scp.pl data/wav data/waves.list > data/waves.scp
+data=$1
+
+ls -1 $data > data/waves.list
+steps/create_wav_scp.pl data/wav data/waves.list > data/waves.scp
 
 if [ ! -f data/waves.list ]; then
   echo "[error] there are no waves in data/wav/";  
