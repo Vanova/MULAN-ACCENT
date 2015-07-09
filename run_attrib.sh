@@ -15,25 +15,17 @@ fbank_config=conf/fbank.conf
 compute-fbank-feats --verbose=2 --config=$fbank_config scp:$scp ark,t:$ark
 
 # 2. run Neural Network forward pass
-dir=exp/dnn4_pretrain-dbn_dnn_${rbm_hid_layers}_${rbm_hid_units}
-testdir=$dir/decode_test
-ali=../multi_manner/kaldiformat/ark
-mkdir -p $testdir $testdir/log
-log=$testdir/log/test.log; hostname>$log
-
-# settings
-minibatch_size=256
-randomizer_size=32768
-verbose=1
-feature_transform=$dir/final.feature_transform
-test_scp=$data_fmllr/test/feats.scp
-labels=$ali/multi_ali_test_post.ark
-nnet_best=$dir/final.nnet
-# end settings
-
-
-
+$nnet=model/rbm_dbn_2_1024.nnet
+$trans=model/fbank_to_splice.trans
 
 # test set to probabilities scores
-nnet-forward ${feature_transform:+ --feature-transform=$feature_transform} \
- $nnet_best scp:$test_scp ark,t:- > $testdir/res_scores.txt
+#nnet-forward --feature-transform=$trans \
+# $nnet scp:$scp ark,t:- > out/res_scores.txt
+
+feats="ark:copy-feats scp:$scp ark:- |"
+feats="$feats add-deltas --delta-order=2 ark:- ark:- |"
+
+nnet-forward --feature-transform=$trans \
+$nnet $feats ark,t:- > out/res_scores.txt
+
+
