@@ -1,0 +1,10 @@
+1. fix path to your installed Kaldi toolkit 
+2. make script runnable chmod +x run.sh
+3. put your wav files in data/wav/ and execute run.sh:
+it will produce filter bank features in dir data. 
+Attribute scores will be saved in res/scores.txt in the next format:
+
+utterance_id [ <columns with attributes scores per each frame>]
+
+Columns in res/scores.txt correspond to the next attributes: 
+[ vowel voiced stop silence other nasal glides fricative ]
