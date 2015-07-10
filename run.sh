@@ -16,6 +16,7 @@ fbank_config=conf/fbank.conf
 compute-fbank-feats --verbose=2 --config=$fbank_config scp:$scp ark,scp,t:$fark,$fscp
 
 # 2. run Neural Network forward pass producing scores
+mkdir res
 trans=model/fbank_to_splice.trans
 nnet=model/rbm_dbn_2_1024.nnet
 feats="ark:copy-feats scp:$fscp ark:- | add-deltas --delta-order=2 ark:- ark:- |"
