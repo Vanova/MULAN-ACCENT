@@ -2,7 +2,6 @@
 
 . ./path.sh
 
-# put your wav files in this folder
 wavdir=data/wav
 
 # 0. prepare data
