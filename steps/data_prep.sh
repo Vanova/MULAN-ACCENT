@@ -2,9 +2,16 @@
 
 wavdir=$1
 
-wavlist=data/waves.list
-scp=data/waves.scp
+if [ -f path.sh ]; then . ./path.sh; fi
 
+# directory for wav lists
+listdir=data/lists
+mkdir -p $listdir || exit 1;
+
+wavlist=$listdir/waves.list
+scp=$listdir/waves.scp
+
+# read wav file names in data folder
 ls -1 $wavdir > $wavlist
 
 if [ ! -f $wavlist ]; then
@@ -17,5 +24,7 @@ while read line; do
   [ ! -f "$fn" ] && echo "[error] no such wav file..." && exit 1;
   echo ${line%.*} $fn
 done < $wavlist > $scp;
+
+cat $scp | sort -u -k1,1 -o $scp
 
 echo "$0: data prepared successfully"
