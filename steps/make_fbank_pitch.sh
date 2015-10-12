@@ -12,8 +12,8 @@ echo "$0 $@"  # Print the command line for logging
 if [ -f path.sh ]; then . ./path.sh; fi
 
 data=$1
-logdir=$2
-fbankdir=$3
+fbankdir=$2
+logdir=$fbankdir/log
 
 mkdir -p $fbankdir || exit 1;
 mkdir -p $logdir || exit 1;

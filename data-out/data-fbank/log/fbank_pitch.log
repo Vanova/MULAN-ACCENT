@@ -1,0 +1,2 @@
+copy-feats --compress=true ark:- ark,scp,t:data-out/data-fbank/fbank_pitch.ark,data-out/data-fbank/fbank_pitch.scp 
+LOG (copy-feats:main():copy-feats.cc:100) Copied 2 feature matrices.

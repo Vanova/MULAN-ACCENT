@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#trap read debug
+
 if [ -f path.sh ]; then . ./path.sh; fi
 
 data=$1
@@ -24,7 +26,7 @@ for f in $required; do
 done
 
 # extract scores using trained CNN model
-nnet-forward --feature-transform=$trans $nnet "$feats" ark,t:- > $scores
+nnet-forward --use-gpu=no --feature-transform=$trans $nnet "$feats" ark,t:- > $scores
 
 [ ! -f $scores ] && echo "[error] something went wrong..." && exit 1;
 echo "[info] attribute scores are successfully extracted: $scores";
