@@ -7,7 +7,7 @@ This is very fresh version of MULAN repository. New updates will appear here fir
 it will produce filter bank features in dir data. 
 Attribute scores will be saved in res/scores.txt in the next format:
 
-utterance_id [ <columns with attributes scores per each frame>]
+utterance_id [ ''columns with attributes scores per each frame'']
 
 Columns in res/scores.txt correspond to the next attributes: 
 [ fricative glides nasal other silence stop voiced vowel ]
