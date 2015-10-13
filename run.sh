@@ -20,13 +20,13 @@ steps/compute_cmvn_stats.sh $fbank_dir $fbank_dir
 
 # 2. forward data through the Neural Network and producing scores
 # for manner
-trans=model/manner/fbank_to_splice_cnn4c_1024_2.trans
-nnet=model/manner/cnn4c_1024_2.nnet
+trans=model/manner/fbank_to_splice_cnn4c_128_4.trans
+nnet=model/manner/cnn4c_128_4.nnet
 manner_out=$out_dir/res/manner
 steps/forward_cnn.sh $fbank_dir $trans $nnet $manner_out
 # for place
-trans=model/place/fbank_to_splice_cnn4c_512_3.trans
-nnet=model/place/cnn4c_512_3.nnet
+trans=model/place/fbank_to_splice_cnn4c_128_9.trans
+nnet=model/place/cnn4c_128_9.nnet
 place_out=$out_dir/res/place
 steps/forward_cnn.sh $fbank_dir $trans $nnet $place_out
 
