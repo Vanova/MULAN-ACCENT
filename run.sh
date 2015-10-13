@@ -5,11 +5,11 @@
 # root folder with audio files to scan
 data_dir=data
 # audio extension
-ext=wav
+ext=pcm
 # output folder for audio lists, fbanks, attribute scores ...
-out_dir=data-out
-fbank_dir=$out_dir/data-fbank
+out_dir=output-data
 lists_dir=$out_dir/lists
+fbank_dir=$out_dir/data-fbank
 
 # 0. prepare data
 steps/data_prep.sh $data_dir $ext $out_dir
