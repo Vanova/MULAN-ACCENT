@@ -12,5 +12,4 @@ utterance_id [ `columns with attributes scores per each frame`]
 
 Columns in `scores.txt` correspond to the next type of attributes (you can find in `data/dict/`): 
 manner: [ fricative glides nasal other silence stop voiced vowel ]
-
 place: [ coronal dental glottal high labial low mid other palatal silence velar ]
