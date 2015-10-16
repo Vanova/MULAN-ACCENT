@@ -4,16 +4,17 @@
 
 if [ -f path.sh ]; then . ./path.sh; fi
 
-data=$1
-trans=$2
-nnet=$3
-dir=$4
+use_gpu=$1
+nj=$2
+data=$3
+trans=$4
+nnet=$5
+dir=$6
 
 mkdir -p $dir || exit 1;
 
-fscp=$data/fbank_pitch.scp
+fscp=$data/feats.scp
 cmvn=$data/cmvn.scp
-feats="ark:copy-feats scp:$fscp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:$cmvn ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |"
 scores=$dir/scores.txt
 
 # check files exist
@@ -26,7 +27,8 @@ for f in $required; do
 done
 
 # extract scores using trained CNN model
-nnet-forward --use-gpu=no --feature-transform=$trans $nnet "$feats" ark,t:- > $scores
+feats="ark:copy-feats scp:$fscp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:$cmvn ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |"
+nnet-forward --use-gpu=$use_gpu --feature-transform=$trans $nnet "$feats" ark,t:- > $scores
 
 [ ! -f $scores ] && echo "[error] something went wrong..." && exit 1;
 echo "[info] attribute scores are successfully extracted: $scores";
