@@ -15,8 +15,18 @@ fbank_dir=$out_dir/data-fbank
 steps/data_prep.sh $data_dir $ext $out_dir
 
 # 1. extract log mel-filter bank features
-steps/make_fbank_pitch.sh $lists_dir $fbank_dir
+#steps/make_fbank_pitch.sh $lists_dir $fbank_dir
+#steps/compute_cmvn_stats.sh $fbank_dir $fbank_dir
+# parallel version
+nj=50 # number of parallel jobs
+steps/make_fbank_pitch.sh $nj $lists_dir $fbank_dir
+
 steps/compute_cmvn_stats.sh $fbank_dir $fbank_dir
+
+
+#steps/make_mfcc.sh --nj 50 --cmd "$train_cmd" \
+#    data/$x exp/make_mfcc/$x $mfccdir
+
 
 # 2. forward data through the Neural Network and producing scores
 # for manner
