@@ -30,6 +30,7 @@ while read line; do
   
   # parse file name only (without path and ext) 
   name=$(basename $full_name)
+  # TODO utterance_id=$(basename $full_name ".$ext")
   utterance_id=${name%.*}
   echo $utterance_id "sox -r 8000 -t raw -e signed-integer -b 16 -c 1 " $full_name " -t wav - |"
 done < $wavlist > $scp;
