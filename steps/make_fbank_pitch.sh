@@ -19,6 +19,9 @@ data=$2
 fbankdir=$3
 logdir=$fbankdir/log
 
+# make $mfccdir an absolute pathname.
+fbankdir=`perl -e '($dir,$pwd)= @ARGV; if($dir!~m:^/:) { $dir = "$pwd/$dir"; } print $dir; ' $fbankdir ${PWD}`
+
 mkdir -p $fbankdir || exit 1;
 mkdir -p $logdir || exit 1;
 
@@ -32,19 +35,24 @@ for f in $required; do
   fi
 done
 
-# split data to parallel
+for n in $(seq $nj); do
+  # the next command does nothing unless $mfccdir/storage/ exists, see
+  # utils/create_data_link.pl for more info.
+  utils/create_data_link.pl $fbankdir/fbank_pitch.$n.ark
+done
+
+# split data for paralleling
 echo "$0: split $scp on nj = $nj."
 split_scps=""
 for n in $(seq $nj); do
   split_scps="$split_scps $logdir/wav.$n.scp"
 done
-
 utils/split_scp.pl $scp $split_scps || exit 1;
 
+# run parallel fbank feature extraction
 fbank_feats="ark:compute-fbank-feats --verbose=2 --config=$fbank_config scp,p:$logdir/wav.JOB.scp ark:- |"
 pitch_feats="ark,s,cs:compute-kaldi-pitch-feats --verbose=2 --config=$pitch_config scp,p:$logdir/wav.JOB.scp ark:- | process-kaldi-pitch-feats ark:- ark:- |"
 
-# run parallel fbank feature extraction
 run.pl JOB=1:$nj $logdir/make_fbank_pitch.JOB.log \
     paste-feats --length-tolerance=$paste_length_tolerance "$fbank_feats" "$pitch_feats" ark:- \| \
     copy-feats --compress=$compress ark:- \

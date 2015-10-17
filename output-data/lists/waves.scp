@@ -1,2 +1,0 @@
-20110115_123359_91_B_03A sox -r 8000 -t raw -e signed-integer -b 16 -c 1  data/wav/lre15/20110115_123359_91_B_03A.pcm  -t wav - |
-en_0638_A_08 sox -r 8000 -t raw -e signed-integer -b 16 -c 1  data/wav/lre15/en_0638_A_08.pcm  -t wav - |
