@@ -2,6 +2,7 @@
 
 . ./path.sh
 
+nj=2 # number of parallel jobs
 # root folder with audio files to scan
 data_dir=data
 # audio extension
@@ -15,10 +16,7 @@ fbank_dir=$out_dir/data-fbank
 steps/data_prep.sh $data_dir $ext $out_dir
 
 # 1. extract log mel-filter bank features
-#steps/make_fbank_pitch.sh $lists_dir $fbank_dir
-#steps/compute_cmvn_stats.sh $fbank_dir $fbank_dir
 # parallel version
-nj=2 # number of parallel jobs
 steps/make_fbank_pitch.sh $nj $lists_dir $fbank_dir
 steps/compute_cmvn_stats.sh $fbank_dir $fbank_dir
 

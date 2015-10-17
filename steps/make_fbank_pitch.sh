@@ -1,8 +1,5 @@
 #!/bin/bash
 
-set -x
-trap read debug
-
 # Begin config
 fbank_config=conf/fbank_cnn.conf
 pitch_config=conf/pitch_cnn.conf
@@ -19,9 +16,6 @@ data=$2
 fbankdir=$3
 logdir=$fbankdir/log
 
-# make $mfccdir an absolute pathname.
-fbankdir=`perl -e '($dir,$pwd)= @ARGV; if($dir!~m:^/:) { $dir = "$pwd/$dir"; } print $dir; ' $fbankdir ${PWD}`
-
 mkdir -p $fbankdir || exit 1;
 mkdir -p $logdir || exit 1;
 
@@ -33,12 +27,6 @@ for f in $required; do
   if [ ! -f $f ]; then
     echo "make_fbank_pitch.sh: no such file $f" && exit 1;
   fi
-done
-
-for n in $(seq $nj); do
-  # the next command does nothing unless $mfccdir/storage/ exists, see
-  # utils/create_data_link.pl for more info.
-  utils/create_data_link.pl $fbankdir/fbank_pitch.$n.ark
 done
 
 # split data for paralleling
