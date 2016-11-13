@@ -1,5 +1,7 @@
 # MULAN-LRE
-This version of MULAN repository for extracting attribute features from raw PCA audio files from LRE2015 dataset. 
+This version of MULAN repository for extracting attribute features from raw audio files from SRE08 dataset. 
+These articulatory attribute features (manner and place) are high-level speech descriptive features.
+...
 
 1. fix path to your installed Kaldi toolkit in `path.sh`
 2. be sure that all your bash files are runnable, fixing: `chmod +x your_file.sh`
