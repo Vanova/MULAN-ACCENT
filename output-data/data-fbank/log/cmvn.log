@@ -1,2 +1,0 @@
-compute-cmvn-stats scp:output-data/data-fbank/feats.scp ark,scp,t:output-data/data-fbank/cmvn.ark,output-data/data-fbank/cmvn.scp 
-LOG (compute-cmvn-stats:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 2 utterances; 0 had errors.
