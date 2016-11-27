@@ -1,0 +1,560 @@
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.1.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.1.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.826816min, (fps 2358.12)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.2.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.2.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.763684min, (fps 2392.24)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.3.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.3.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.776343min, (fps 2390.85)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.4.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.4.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.81836min, (fps 2393.61)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.5.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.5.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.830374min, (fps 2391.99)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.6.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.6.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 9.90559min, (fps 2378.06)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.7.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.7.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 12.51min, (fps 2376.75)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.8.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.8.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 12.4892min, (fps 2379.51)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.9.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.9.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 12.4999min, (fps 2376.97)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.10.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.10.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 8.11434min, (fps 2375.46)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.11.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.11.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.771712min, (fps 2401.37)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.12.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.12.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.7763min, (fps 2399.74)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.13.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.13.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.82673min, (fps 2396.59)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.14.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.14.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.813287min, (fps 2395.44)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.15.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.15.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.873802min, (fps 2393.77)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.16.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.16.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.771661min, (fps 2388.31)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.17.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.17.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 2.9441min, (fps 2374.15)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.18.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.18.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 58 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 58 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 58 files in 12.3202min, (fps 2371.26)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.19.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.19.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 58 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 58 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 58 files in 12.3312min, (fps 2370.14)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.20.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.20.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 58 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 58 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 58 files in 12.3332min, (fps 2366.81)
+[info] attribute scores are successfully extracted: /home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/res/manner/scores.20.txt
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.1.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.1.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 315 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 315 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 315 files in 4.13074min, (fps 2402.11)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.2.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.2.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.01091min, (fps 2409.34)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.3.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.3.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.19056min, (fps 2407.05)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.4.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.4.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.07392min, (fps 2402.46)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.5.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.5.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.30009min, (fps 2403.62)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.6.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.6.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 19.6507min, (fps 2358.58)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.7.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.7.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 66.9874min, (fps 2362.24)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.8.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.8.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 66.7528min, (fps 2370.26)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.9.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.9.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 66.4177min, (fps 2382.37)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.10.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+add-deltas --delta-order=2 ark:- ark:- 
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.10.scp ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 66.359min, (fps 2385.11)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.11.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.11.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 66.8192min, (fps 2369)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.12.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.12.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 13.3343min, (fps 2376.36)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.13.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.13.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 3.91593min, (fps 2404.47)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.14.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.14.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.05421min, (fps 2402.84)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.15.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.15.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.29466min, (fps 2396.01)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.16.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.16.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.13291min, (fps 2403.24)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.17.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.17.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 29.046min, (fps 2356.41)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.18.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.18.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 67.3689min, (fps 2349.32)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.19.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.19.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 66.9808min, (fps 2363.11)
+nnet-forward --use-gpu=no --feature-transform=model/manner/fbank_to_splice_cnn4c_128_4.trans model/manner/cnn4c_128_4.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.20.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+add-deltas --delta-order=2 ark:- ark:- 
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.20.scp ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 66.9065min, (fps 2365.66)
+[info] attribute scores are successfully extracted: /home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/res/manner/scores.20.txt
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.1.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.1.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.858427min, (fps 2271.29)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.2.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.2.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.802547min, (fps 2276.4)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.3.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.3.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.814808min, (fps 2277.98)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.4.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.4.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.859294min, (fps 2279.58)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.5.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.5.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.873098min, (fps 2274.95)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.6.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.6.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 10.505min, (fps 2242.37)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.7.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+add-deltas --delta-order=2 ark:- ark:- 
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.7.scp ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 13.1848min, (fps 2255.09)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.8.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.8.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 13.1493min, (fps 2260.06)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.9.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.9.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 13.1381min, (fps 2261.51)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.10.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.10.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 8.51854min, (fps 2262.75)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.11.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.11.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.813021min, (fps 2279.36)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.12.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.12.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.8152min, (fps 2285.23)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.13.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.13.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.867696min, (fps 2283.44)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.14.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.14.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.852791min, (fps 2284.48)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.15.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.15.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.916412min, (fps 2282.47)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.16.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.16.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 0.807475min, (fps 2282.38)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.17.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.17.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 59 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 59 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 59 files in 3.09168min, (fps 2260.82)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.18.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.18.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 58 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 58 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 58 files in 12.9489min, (fps 2256.13)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.19.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.19.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 58 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 58 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 58 files in 12.9898min, (fps 2249.96)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.20.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/data-fbank/fbank_pitch.20.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 58 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 58 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 58 files in 13.0128min, (fps 2243.21)
+[info] attribute scores are successfully extracted: /home/vano/Storage/projects_data/accent_recognition/mulan_extractor/data/res/place/scores.20.txt
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.1.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.1.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 315 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 315 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 315 files in 4.33808min, (fps 2287.3)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.2.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.2.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.21275min, (fps 2293.91)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.3.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.3.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.4003min, (fps 2292.32)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.4.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.4.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.27617min, (fps 2288.83)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.5.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.5.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.51806min, (fps 2287.67)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.6.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.6.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 20.7035min, (fps 2238.65)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.7.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.7.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 70.3488min, (fps 2249.36)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.8.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.8.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 69.9641min, (fps 2261.47)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.9.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.9.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 70.0122min, (fps 2260.05)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.10.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.10.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 70.3437min, (fps 2250.01)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.11.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.11.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 70.0469min, (fps 2259.84)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.12.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+add-deltas --delta-order=2 ark:- ark:- 
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.12.scp ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 13.9629min, (fps 2269.38)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.13.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.13.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.11966min, (fps 2285.56)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.14.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.14.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.26473min, (fps 2284.22)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.15.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.15.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.49423min, (fps 2289.62)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.16.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.16.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 4.33777min, (fps 2289.75)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.17.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.17.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 30.4897min, (fps 2244.84)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.18.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+add-deltas --delta-order=2 ark:- ark:- 
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.18.scp ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 70.755min, (fps 2236.89)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.19.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.19.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+LOG (copy-feats:main():copy-feats.cc:101) Copied 314 feature matrices.
+LOG (apply-cmvn:main():apply-cmvn.cc:143) Applied cepstral mean and variance normalization to 314 utterances, errors on 0
+LOG (nnet-forward:main():nnet-forward.cc:209) Done 314 files in 70.6944min, (fps 2238.98)
+nnet-forward --use-gpu=no --feature-transform=model/place/fbank_to_splice_cnn4c_128_9.trans model/place/cnn4c_128_9.nnet 'ark:copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.20.scp ark:- | apply-cmvn --print-args=false --norm-vars=true scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |' ark,t:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+add-deltas --delta-order=2 ark:- ark:- 
+copy-feats scp:/home/vano/Storage/projects_data/accent_recognition/mulan_extractor/ubm_tmatrix/data-fbank/fbank_pitch.20.scp ark:- 
