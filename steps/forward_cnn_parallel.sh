@@ -24,20 +24,33 @@ for f in $required; do
   fi
 done
 
-# extract scores using trained CNN model
 ### queued jobs on the CPU, but BE CAREFUL WITH SWAP memory!!!
 fscp=$data/fbank_pitch.JOB.scp # JOB is placeholder for number of chunk
 cmvn_opts="apply-cmvn --print-args=false --norm-vars=true scp:$cmvn ark:- ark:-"
 delta_opts="add-deltas --delta-order=2 ark:- ark:-"
 feats="ark:copy-feats scp:$fscp ark:- | $cmvn_opts | $delta_opts |"
 
-Run the data forward pass in the parallel queue on the CPU
-nnet_forward_opts="--no-softmax=true --prior-scale=1.0"
+# Run the data forward pass in the parallel queue on the CPU
+# nnet_forward_opts="--no-softmax=true --prior-scale=1.0"
 use_gpu=no
-num_threads=1
-run.pl --num-threads $((num_threads+1)) JOB=1:$nj $dir/log/decode.JOB.log \
+num_threads=3
+loops=$(($nj / $num_threads - 1))
+for i in `seq 0 $loops`; do
+	st=$(($i * $num_threads + 1))
+	end=$((($i + 1) * $num_threads))
+	echo "loop jobs: $st - $end"
+	run.pl JOB=$st:$end $dir/log/decode.JOB.log \
 	nnet-forward $nnet_forward_opts --feature-transform=$trans \
 	 --use-gpu=$use_gpu "$nnet" "$feats"  "ark,t:$dir/scores.JOB.txt" || exit 1;
+done
+
+if [ $(($loops * $num_threads)) -ne $nj ]; then
+	st=$((($loops + 1) * $num_threads + 1))
+	echo "Ending jobs: $st - $nj"
+	run.pl JOB=$st:$nj $dir/log/decode.JOB.log \
+		nnet-forward $nnet_forward_opts --feature-transform=$trans \
+		 --use-gpu=$use_gpu "$nnet" "$feats"  "ark,t:$dir/scores.JOB.txt" || exit 1;
+fi
 #############
 
 # check number of extracted score files
@@ -54,4 +67,4 @@ for i in `seq 1 $nj`; do
 	fi
 done
 
-echo "[info] attribute scores are successfully extracted: $scores";
+echo "[info] attribute scores are successfully extracted";

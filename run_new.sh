@@ -40,33 +40,33 @@ fi
 
 # 2. forward data through the Neural Network and producing scores
 if [ $stage -eq 2 ]; then
-  # for manner
-  # data 
+  echo "*** Manner extraction ***"
+  echo "SRE data list"
   fbank_dir=$out_dir_data/data-fbank
   trans=model/manner/fbank_to_splice_cnn4c_128_4.trans
   nnet=model/manner/cnn4c_128_4.nnet
   manner_out=$out_dir_data/res/manner
-  steps/forward_cnn_sequential.sh $nj $fbank_dir $trans $nnet $manner_out
-  # ubm
+  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $manner_out
+  echo "SRE UBM list"
   fbank_dir=$out_dir_ubm/data-fbank
   trans=model/manner/fbank_to_splice_cnn4c_128_4.trans
   nnet=model/manner/cnn4c_128_4.nnet
   manner_out=$out_dir_ubm/res/manner
-  steps/forward_cnn_sequential.sh $nj $fbank_dir $trans $nnet $manner_out
+  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $manner_out
 
-  # for place
-  # data 
+  echo "*** Place extraction ***"
+  echo "SRE data list"
   fbank_dir=$out_dir_data/data-fbank
   trans=model/place/fbank_to_splice_cnn4c_128_9.trans
   nnet=model/place/cnn4c_128_9.nnet
   place_out=$out_dir_data/res/place
-  steps/forward_cnn_sequential.sh $nj $fbank_dir $trans $nnet $place_out
-  # ubm
+  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $place_out
+  echo "SRE UBM list"
   fbank_dir=$out_dir_ubm/data-fbank
   trans=model/place/fbank_to_splice_cnn4c_128_9.trans
   nnet=model/place/cnn4c_128_9.nnet
   place_out=$out_dir_ubm/res/place
-  steps/forward_cnn_sequential.sh $nj $fbank_dir $trans $nnet $place_out
+  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $place_out
 
 # TODO for fusion (manner + place)
 fi
