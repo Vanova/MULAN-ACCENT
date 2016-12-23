@@ -38,36 +38,48 @@ if [ $stage -eq 1 ]; then
   steps/compute_cmvn_stats.sh $fbank_dir $fbank_dir
 fi
 
+# NOTE: compile last KALDI src with MFoM UvZ loss
 # 2. forward data through the Neural Network and producing scores
 if [ $stage -eq 2 ]; then
   echo "*** Manner extraction ***"
   echo "SRE data list"
   fbank_dir=$out_dir_data/data-fbank
-  trans=model/manner/fbank_to_splice_cnn4c_128_4.trans
-  nnet=model/manner/cnn4c_128_4.nnet
+  trans=model/manner/fbank_to_splice_cnn4c_128_3_uvz_mfom.trans
+  nnet=model/manner/cnn4c_128_3_uvz_mfom.nnet
   manner_out=$out_dir_data/res/manner
   steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $manner_out
   echo "SRE UBM list"
   fbank_dir=$out_dir_ubm/data-fbank
-  trans=model/manner/fbank_to_splice_cnn4c_128_4.trans
-  nnet=model/manner/cnn4c_128_4.nnet
+  trans=model/manner/fbank_to_splice_cnn4c_128_3_uvz_mfom.trans
+  nnet=model/manner/cnn4c_128_3_uvz_mfom.nnet
   manner_out=$out_dir_ubm/res/manner
   steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $manner_out
 
   echo "*** Place extraction ***"
   echo "SRE data list"
   fbank_dir=$out_dir_data/data-fbank
-  trans=model/place/fbank_to_splice_cnn4c_128_9.trans
-  nnet=model/place/cnn4c_128_9.nnet
+  trans=model/place/fbank_to_splice_cnn4c_128_7_uvz_mfom.trans
+  nnet=model/place/cnn4c_128_7_uvz_mfom.nnet
   place_out=$out_dir_data/res/place
   steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $place_out
   echo "SRE UBM list"
   fbank_dir=$out_dir_ubm/data-fbank
-  trans=model/place/fbank_to_splice_cnn4c_128_9.trans
-  nnet=model/place/cnn4c_128_9.nnet
+  trans=model/place/fbank_to_splice_cnn4c_128_7_uvz_mfom.trans
+  nnet=model/place/cnn4c_128_7_uvz_mfom.nnet
   place_out=$out_dir_ubm/res/place
   steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $place_out
 
-# TODO for fusion (manner + place)
+  echo "*** Fusion extraction ***"
+  echo "SRE data list"
+  fbank_dir=$out_dir_data/data-fbank
+  trans=model/fusion/fbank_to_splice_cnn4c_128_5_uvz_mfom.trans
+  nnet=model/fusion/cnn4c_128_5_uvz_mfom.nnet
+  place_out=$out_dir_data/res/fusion
+  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $place_out
+  echo "SRE UBM list"
+  fbank_dir=$out_dir_ubm/data-fbank
+  trans=model/fusion/fbank_to_splice_cnn4c_128_5_uvz_mfom.trans
+  nnet=model/fusion/cnn4c_128_5_uvz_mfom.nnet
+  place_out=$out_dir_ubm/res/fusion
+  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $place_out
 fi
-

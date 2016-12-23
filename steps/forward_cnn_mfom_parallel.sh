@@ -8,7 +8,9 @@ nj=$1
 data=$2
 trans=$3
 nnet=$4
-dir=$5
+alpha=$5
+beta=$6
+dir=$7
 
 mkdir -p $dir || exit 1;
 
@@ -31,25 +33,35 @@ delta_opts="add-deltas --delta-order=2 ark:- ark:-"
 feats="ark:copy-feats scp:$fscp ark:- | $cmvn_opts | $delta_opts |"
 
 # Run the data forward pass in the parallel queue on the CPU
-# nnet_forward_opts="--no-softmax=true --prior-scale=1.0"
 use_gpu=no
-num_threads=2
-loops=$(($nj / $num_threads))
-for i in `seq 1 $loops`; do
-	st=$((($i - 1) * $num_threads + 1))
-	end=$(($i * $num_threads))
+num_threads=3
+minibatch_size=128
+# TODO check if the objective function matter
+obj=mif-uvz
+loops=$(($nj / $num_threads - 1))
+for i in `seq 0 $loops`; do
+	st=$(($i * $num_threads + 1))
+	end=$((($i + 1) * $num_threads))
 	echo "loop jobs: $st - $end"
 	run.pl JOB=$st:$end $dir/log/decode.JOB.log \
-	nnet-forward $nnet_forward_opts --feature-transform=$trans \
-	 --use-gpu=$use_gpu "$nnet" "$feats"  "ark,t:$dir/scores.JOB.txt" || exit 1;
+	  nnet-forward --use-gpu=$use_gpu --cross-validate=true \
+      --minibatch-size=$minibatch_size \
+      --objective-function=$obj \
+      --multiplicative-param=$alpha --additive-param=$beta \
+	  --feature-transform=$trans \
+      "$nnet" "$feats"  "ark,t:$dir/scores.JOB.txt" || exit 1;
 done
 
 if [ $(($loops * $num_threads)) -ne $nj ]; then
-	st=$(($loops * $num_threads + 1))
+	st=$((($loops + 1) * $num_threads + 1))
 	echo "Ending jobs: $st - $nj"
 	run.pl JOB=$st:$nj $dir/log/decode.JOB.log \
-		nnet-forward $nnet_forward_opts --feature-transform=$trans \
-		 --use-gpu=$use_gpu "$nnet" "$feats"  "ark,t:$dir/scores.JOB.txt" || exit 1;
+	  nnet-forward --use-gpu=$use_gpu --cross-validate=true \
+      --minibatch-size=$minibatch_size \
+      --objective-function=$obj \
+      --multiplicative-param=$alpha --additive-param=$beta \
+	  --feature-transform=$trans \
+      "$nnet" "$feats"  "ark,t:$dir/scores.JOB.txt" || exit 1;
 fi
 #############
 
@@ -64,8 +76,6 @@ for i in `seq 1 $nj`; do
 	  echo "$0: it seems not all of the feature files were successfully processed ($nf != $nu):"
 	  echo "compare $fb vs $scores"
 	  exit 1;
-	# else
-		# echo "scores have been checked"
 	fi
 done
 
