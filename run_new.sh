@@ -74,12 +74,41 @@ if [ $stage -eq 2 ]; then
   fbank_dir=$out_dir_data/data-fbank
   trans=model/fusion/fbank_to_splice_cnn4c_128_5_uvz_mfom.trans
   nnet=model/fusion/cnn4c_128_5_uvz_mfom.nnet
-  place_out=$out_dir_data/res/fusion
-  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $place_out
+  fusion_out=$out_dir_data/res/fusion
+  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $fusion_out
   echo "SRE UBM list"
   fbank_dir=$out_dir_ubm/data-fbank
   trans=model/fusion/fbank_to_splice_cnn4c_128_5_uvz_mfom.trans
   nnet=model/fusion/cnn4c_128_5_uvz_mfom.nnet
-  place_out=$out_dir_ubm/res/fusion
-  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $place_out
+  fusion_out=$out_dir_ubm/res/fusion
+  steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $fusion_out
+fi
+
+# 3. split fusion on fusion_manner and fusion_place parts
+if [ $stage -eq 3 ]; then
+  echo "*** Select MANNER part from FUSION scores ***"
+  echo "SRE data list"
+  feat_select="2,4,9,10,12,13,15,16" # with 'other' and 'sil'
+  fusion_in=$out_dir_data/res/fusion
+  fusion_out=$out_dir_data/res/fusion_manner
+  log=$fusion_out/log
+  steps/select_features.sh $nj $feat_select $fusion_in $fusion_out $log
+  echo "SRE UBM list"
+  fusion_in=$out_dir_ubm/res/fusion
+  fusion_out=$out_dir_ubm/res/fusion_manner
+  log=$fusion_out/log
+  steps/select_features.sh $nj $feat_select $fusion_in $fusion_out $log  
+
+  echo "*** Select PLACE part from FUSION scores ***"
+  echo "SRE data list"
+  feat_select="0,1,3,5,6,7,8,10,11,12,14" # with 'other' and 'sil'
+  fusion_in=$out_dir_data/res/fusion
+  fusion_out=$out_dir_data/res/fusion_place
+  log=$fusion_out/log
+  steps/select_features.sh $nj $feat_select $fusion_in $fusion_out $log
+  echo "SRE UBM list"
+  fusion_in=$out_dir_ubm/res/fusion
+  fusion_out=$out_dir_ubm/res/fusion_place
+  log=$fusion_out/log
+  steps/select_features.sh $nj $feat_select $fusion_in $fusion_out $log  
 fi
