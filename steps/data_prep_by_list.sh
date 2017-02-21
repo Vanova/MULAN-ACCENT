@@ -1,4 +1,6 @@
 #!/bin/bash 
+# set -x;
+# trap read debug;
 
 ##
 # Prepare data lists for feature extraction from dataset lists
@@ -49,4 +51,4 @@ if [ $nf -ne $nu ]; then
   exit 1;
 fi
 
-echo "$0: data lists prepared successfully: $nu utterances"
+echo "$0: data lists prepared successfully $scp: $nu utterances"

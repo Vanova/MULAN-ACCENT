@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# set -x;
+# trap read debug
+
 # Begin config
 fbank_config=conf/fbank_cnn.conf
 pitch_config=conf/pitch_cnn.conf

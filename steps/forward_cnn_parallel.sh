@@ -33,7 +33,7 @@ feats="ark:copy-feats scp:$fscp ark:- | $cmvn_opts | $delta_opts |"
 # Run the data forward pass in the parallel queue on the CPU
 # nnet_forward_opts="--no-softmax=true --prior-scale=1.0"
 use_gpu=no
-num_threads=2
+num_threads=20 # TODO: fix number according to the number of threads of PC
 loops=$(($nj / $num_threads))
 for i in `seq 1 $loops`; do
 	st=$((($i - 1) * $num_threads + 1))
@@ -63,9 +63,7 @@ for i in `seq 1 $nj`; do
 	if [ $nf -ne $nu ]; then
 	  echo "$0: it seems not all of the feature files were successfully processed ($nf != $nu):"
 	  echo "compare $fb vs $scores"
-	  exit 1;
-	# else
-		# echo "scores have been checked"
+	  exit 1;	
 	fi
 done
 
