@@ -4,7 +4,7 @@ These articulatory attribute features (manner and place) are high-level speech d
 ...
 
 1. fix path to your installed Kaldi toolkit in `path.sh`
-2. be sure that all your bash files are runnable, fixing: `chmod +x your_file.sh`
+2. be sure that all your bash files are runnable, fixing: run from the project folder `chmod -R +x ./`
 3. change input folder `data_dir` in `run.sh` - root folder with audio files, `steps/data_prep.sh` script will search all files with extension `pcm` in all subfolders
 4. change output folder `out_dir` in `run.sh`, audio lists, fbank features and result attribute scores will be saved there
 

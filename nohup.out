@@ -1,0 +1,220 @@
+------------------SRE dataset---------------------
+*** Manner extraction ***
+loop jobs: 1 - 20
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/manner [done]
+loop jobs: 1 - 20
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/manner [done]
+*** Place extraction ***
+loop jobs: 1 - 20
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/place [done]
+loop jobs: 1 - 20
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/place [done]
+*** Fusion extraction ***
+[error] make_fbank_pitch.sh: no such file /home1/ivan/projects_data/MULAN-ACCENT/data/data-fbank/feats.scp
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion [done]
+[error] make_fbank_pitch.sh: no such file /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/data-fbank/feats.scp
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion [done]
+------------------SRE dataset---------------------
+*** Fusion extraction ***
+loop jobs: 1 - 20
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion [done]
+loop jobs: 1 - 20
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion [done]
+*** Select MANNER part from FUSION scores ***
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.1.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.1.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.1.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.1.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.2.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.2.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.2.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.2.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.3.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.3.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.3.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.3.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.4.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.4.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.4.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.4.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.5.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.5.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.5.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.5.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.6.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.6.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.6.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.6.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.7.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.7.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.7.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.7.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.8.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.8.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.8.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.8.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.9.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.9.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.9.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.9.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.10.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.10.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.10.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.10.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.11.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.11.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.11.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.11.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.12.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.12.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.12.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.12.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.13.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.13.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.13.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.13.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.14.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.14.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.14.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.14.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.15.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.15.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.15.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.15.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.16.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.16.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.16.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.16.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.17.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.17.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.17.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.17.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.18.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.18.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.18.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.18.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.19.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.19.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.19.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.19.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.20.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/scores.20.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner/log/scores.20.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.20.txt [done]
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_manner [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.1.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.1.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.1.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.1.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.2.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.2.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.2.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.2.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.3.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.3.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.3.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.3.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.4.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.4.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.4.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.4.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.5.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.5.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.5.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.5.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.6.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.6.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.6.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.6.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.7.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.7.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.7.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.7.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.8.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.8.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.8.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.8.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.9.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.9.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.9.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.9.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.10.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.10.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.10.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.10.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.11.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.11.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.11.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.11.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.12.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.12.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.12.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.12.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.13.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.13.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.13.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.13.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.14.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.14.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.14.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.14.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.15.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.15.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.15.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.15.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.16.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.16.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.16.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.16.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.17.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.17.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.17.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.17.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.18.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.18.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.18.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.18.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.19.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.19.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.19.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.19.txt [done]
+select-feats 2,4,9,10,12,13,15,16 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.20.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/scores.20.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner/log/scores.20.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.20.txt [done]
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_manner [done]
+*** Select PLACE part from FUSION scores ***
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.1.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.1.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.1.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.1.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.2.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.2.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.2.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.2.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.3.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.3.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.3.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.3.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.4.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.4.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.4.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.4.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.5.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.5.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.5.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.5.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.6.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.6.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.6.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.6.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.7.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.7.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.7.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.7.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.8.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.8.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.8.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.8.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.9.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.9.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.9.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.9.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.10.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.10.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.10.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.10.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.11.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.11.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.11.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.11.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.12.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.12.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.12.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.12.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.13.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.13.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.13.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.13.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.14.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.14.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.14.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.14.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.15.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.15.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.15.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.15.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.16.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.16.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.16.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.16.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.17.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.17.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.17.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.17.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.18.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.18.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.18.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.18.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.19.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.19.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.19.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.19.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.20.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/scores.20.txt,/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place/log/scores.20.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion/scores.20.txt [done]
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/fusion_place [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.1.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.1.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.1.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.1.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.2.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.2.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.2.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.2.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.3.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.3.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.3.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.3.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.4.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.4.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.4.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.4.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.5.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.5.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.5.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.5.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.6.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.6.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.6.scp 
+LID dataset
+*** Manner extraction ***
+./run_dbn.sh: line 57: steps/forward_dbn_parallel.sh: No such file or directory
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/dbn/manner [done]
+./run_dbn.sh: line 57: steps/forward_dbn_parallel.sh: No such file or directory
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/dbn/manner [done]
+*** Place extraction ***
+./run_dbn.sh: line 68: steps/forward_dbn_parallel.sh: No such file or directory
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/dbn/place [done]
+./run_dbn.sh: line 68: steps/forward_dbn_parallel.sh: No such file or directory
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/dbn/place [done]
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.6.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.7.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.7.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.7.scp 
+LID dataset
+*** Manner extraction ***
+loop jobs: 1 - 20
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.7.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.8.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.8.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.8.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.8.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.9.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.9.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.9.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.9.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.10.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.10.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.10.scp 
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/dbn/manner [done]
+loop jobs: 1 - 20
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.10.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.11.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.11.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.11.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.11.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.12.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.12.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.12.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.12.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.13.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.13.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.13.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.13.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.14.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.14.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.14.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.14.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.15.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.15.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.15.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.15.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.16.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.16.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.16.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.16.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.17.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.17.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.17.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.17.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.18.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.18.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.18.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.18.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.19.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.19.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.19.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.19.txt [done]
+select-feats 0,1,3,5,6,7,8,10,11,12,14 ark:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.20.txt ark,scp,t:/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/scores.20.txt,/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place/log/scores.20.scp 
+/home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion/scores.20.txt [done]
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/fusion_place [done]
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/dbn/manner [done]
+*** Place extraction ***
+loop jobs: 1 - 20
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/data/res/dbn/place [done]
+loop jobs: 1 - 20
+[info] attribute scores are successfully extracted
+SRE /home1/ivan/projects_data/MULAN-ACCENT/ubm_tmatrix/res/dbn/place [done]

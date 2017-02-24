@@ -55,7 +55,7 @@ if [ $stage -eq 2 ]; then
     fbank_dir=$out_dir_data/cnn-fbank
     trans=model/manner/fbank_to_splice_cnn4c_128_3_uvz_mfom.trans
     nnet=model/manner/cnn4c_128_3_uvz_mfom.nnet
-    manner_out=$out_dir_data/res/manner
+    manner_out=$out_dir_data/res/cnn/manner
     steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $manner_out
     echo "SRE $manner_out [done]"
   done
@@ -74,10 +74,10 @@ if [ $stage -eq 2 ]; then
   echo "*** Fusion extraction ***"
   for (( i = 0; i < ${#out_sub_dir[@]}; ++i )); do
     out_dir_data=$out_dir/${out_sub_dir[i]}
-    fbank_dir=$out_dir_data/data-fbank
+    fbank_dir=$out_dir_data/cnn-fbank
     trans=model/fusion/fbank_to_splice_cnn4c_128_5_uvz_mfom.trans
     nnet=model/fusion/cnn4c_128_5_uvz_mfom.nnet
-    fusion_out=$out_dir_data/res/fusion
+    fusion_out=$out_dir_data/res/cnn/fusion
     steps/forward_cnn_parallel.sh $nj $fbank_dir $trans $nnet $fusion_out
     echo "SRE $fusion_out [done]"
   done
@@ -89,8 +89,8 @@ if [ $stage -eq 3 ]; then
   feat_select="2,4,9,10,12,13,15,16" # with 'other' and 'sil'
   for (( i = 0; i < ${#out_sub_dir[@]}; ++i )); do
     out_dir_data=$out_dir/${out_sub_dir[i]}
-    fusion_in=$out_dir_data/res/fusion
-    fusion_out=$out_dir_data/res/fusion_manner
+    fusion_in=$out_dir_data/res/cnn/fusion
+    fusion_out=$out_dir_data/res/cnn/fusion_manner
     log=$fusion_out/log
     steps/select_features.sh $nj $feat_select $fusion_in $fusion_out $log
     echo "SRE $fusion_out [done]"
@@ -99,8 +99,9 @@ if [ $stage -eq 3 ]; then
   echo "*** Select PLACE part from FUSION scores ***"
   feat_select="0,1,3,5,6,7,8,10,11,12,14" # with 'other' and 'sil'
   for (( i = 0; i < ${#out_sub_dir[@]}; ++i )); do
-    fusion_in=$out_dir_ubm/res/fusion
-    fusion_out=$out_dir_ubm/res/fusion_place
+    out_dir_data=$out_dir/${out_sub_dir[i]}
+    fusion_in=$out_dir_data/res/cnn/fusion
+    fusion_out=$out_dir_data/res/cnn/fusion_place
     log=$fusion_out/log
     steps/select_features.sh $nj $feat_select $fusion_in $fusion_out $log  
     echo "SRE $fusion_out [done]"
